@@ -2,7 +2,7 @@
   "name": "bus-ticket-booking",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vinaykiranG.github.io/ticketing",
+  "homepage": "http://vinaykiranG.github.io/BussTicketapp",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "@testing-library/jest-dom": "^5.16.5",
