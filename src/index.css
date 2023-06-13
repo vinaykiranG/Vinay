@@ -1,0 +1,98 @@
+/* Reset default browser styles */
+body,
+ul,
+li,
+h1,
+h2,
+p,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Set box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Center content on the page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Style table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}

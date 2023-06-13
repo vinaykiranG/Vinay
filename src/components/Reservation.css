@@ -1,0 +1,143 @@
+.reservation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightgrey;
+  margin: 20px;
+  padding: 20px;
+}
+
+.reservation-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.seat-layout-container {
+  margin-top: 40px;
+}
+
+.seat-layout-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.bus-container {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  height: fit-content;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(270deg);
+}
+
+.lower-deck,
+.upper-deck {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 45%;
+}
+
+.seat-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: inherit;
+  align-items: center;
+}
+
+.seat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 80px;
+  margin: 10px;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.seat::before {
+  content: "\f236";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.driver-seat {
+  background-color: #ff9b00;
+  color: white;
+}
+
+.reserved {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.available {
+  background-color: whitesmoke;
+}
+
+.seat:hover {
+  background-color: red;
+}
+
+.reservation-form-container {
+  margin-top: 40px;
+}
+
+.reservation-form-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation-form input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reserve-button {
+  width: 200px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+  background-color: #222;
+}
+
+.locked {
+  background-color: #ccc !important;
+  color: #999 !important;
+  cursor: not-allowed !important;
+}
